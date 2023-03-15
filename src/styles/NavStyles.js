@@ -1,14 +1,4 @@
-import React from 'react';
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
-import { AnchorLink } from 'gatsby-plugin-anchor-links';
-
-/*
- * This is a ready to use component, just import it and plop it into your project as:
- * <Navbar/>
- * You might want to move all the style components into separate files for readability
- * if you plan to do more with it.
- */
 
 const Bar = styled.nav`
   font-size: 18px;
@@ -38,7 +28,7 @@ const NavLi = styled.li`
   text-align: center;
   margin: 15px auto;
 ` 
-const AnchorLink = styled.a`
+const NavLink = styled.a`
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -68,50 +58,3 @@ const Hamburger = styled.img`
     display: none;
   }
 `
-class Navbar extends React.PureComponent {
-  constructor(props) {
-    super(props);
-    this.state = {displayNav: (props.displayNav ? 'flex' : 'none')};
-  }
-  toggleNavBar() {
-    this.setState((prevState, props) => {
-      switch(prevState.displayNav) {
-        case 'none':
-          return { displayNav: 'flex'};          
-        case 'flex':
-        default:
-          return { displayNav: 'none'}          
-      }
-    })
-  }
-  render() {
-    return (
-    <Bar>
-      <NavBarToggle onClick={() => this.toggleNavBar()}>
-        <Hamburger />
-      </NavBarToggle>
-      <Logo href="#">logo</Logo>
-      <MainNav display={this.state.displayNav}>
-          <NavLi>
-              <AnchorLink to="#skills" title="Skills">Skills</AnchorLink>
-          </NavLi>
-          <NavLi>
-              <AnchorLink to="#cv" title="CV">CV</AnchorLink>
-          </NavLi>
-          <NavLi>
-              <AnchorLink to="#projekte" title="Projekte">Projekte</AnchorLink>
-          </NavLi>
-          <NavLi>
-              <AnchorLink to="#kontakt" title="Kontakt">Kontakt</AnchorLink>
-          </NavLi>
-      </MainNav>
-    </Bar>
-  )}
-}
-
-Navbar.propTypes = {
-  // decides if we initially display the navbar open or not
-  displayNav: PropTypes.bool,
-}
-
-export default Navbar;

@@ -6,13 +6,14 @@ module.exports = {
     title: `aboutyin.de`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: [
+  plugins: [ 
+    "gatsby-plugin-styled-components",
+    "gatsby-plugin-anchor-links",
     "gatsby-plugin-sass", 
     "gatsby-plugin-image", 
     "gatsby-plugin-sitemap", 
     "gatsby-plugin-sharp", 
-    "gatsby-transformer-sharp", 
-    "gatsby-plugin-styled-components", {
+    "gatsby-transformer-sharp", {
       resolve: 'gatsby-source-filesystem',
       options: {
         "name": "images",
