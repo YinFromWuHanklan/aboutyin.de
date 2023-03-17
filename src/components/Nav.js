@@ -1,7 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { isStyledComponent } from 'styled-components';
 import PropTypes from 'prop-types';
 import { AnchorLink } from 'gatsby-plugin-anchor-links';
+import GlobalStyles from "../styles/GlobalStyles"
 
 /*
  * This is a ready to use component, just import it and plop it into your project as:
@@ -12,8 +13,7 @@ import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
 const Bar = styled.nav`
   font-size: 18px;
-  background-image: linear-gradient(260deg,  rgb(42,244,152,255) 0%, #3498db 100%); 
-  border: 1px solid rgba(0,0,0,0.2);
+  background-color: var(--background-dark);
   padding-bottom: 10px;
   @media (min-width: 768px) {
     display: flex;
@@ -38,10 +38,11 @@ const NavLi = styled.li`
   text-align: center;
   margin: 15px auto;
 ` 
-const AnchorLink = styled.a`
+const LinkText = styled.span`
   list-style-type: none;
   display: flex;
   flex-direction: column;
+  color: var(--secondary);
   @media (min-width: 768px) {    
     margin: 0px 10px;
   }
@@ -90,19 +91,19 @@ class Navbar extends React.PureComponent {
       <NavBarToggle onClick={() => this.toggleNavBar()}>
         <Hamburger />
       </NavBarToggle>
-      <Logo href="#">logo</Logo>
+      <Logo href="/">aboutyin</Logo>
       <MainNav display={this.state.displayNav}>
           <NavLi>
-              <AnchorLink to="#skills" title="Skills">Skills</AnchorLink>
+              <AnchorLink to="#skills" title="Skills"><LinkText>Skills</LinkText></AnchorLink>
           </NavLi>
           <NavLi>
-              <AnchorLink to="#cv" title="CV">CV</AnchorLink>
+              <AnchorLink to="#cv" title="CV"><LinkText>CV</LinkText></AnchorLink>
           </NavLi>
           <NavLi>
-              <AnchorLink to="#projekte" title="Projekte">Projekte</AnchorLink>
+              <AnchorLink to="#projekte" title="Projekte"><LinkText>Projekte</LinkText></AnchorLink>
           </NavLi>
           <NavLi>
-              <AnchorLink to="#kontakt" title="Kontakt">Kontakt</AnchorLink>
+              <AnchorLink to="#kontakt" title="Kontakt"><LinkText>Kontakt</LinkText></AnchorLink>
           </NavLi>
       </MainNav>
     </Bar>

@@ -1,18 +1,12 @@
 import * as React from "react"
 import Layout from "../components/Layout"
+import GlobalStyles from "../styles/GlobalStyles"
+import styled, { isStyledComponent } from 'styled-components';
 
 const pageStyles = {
   color: "#232129",
   padding: 96,
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-const headingAccentStyles = {
-  color: "#663399",
 }
 const paragraphStyles = {
   marginBottom: 48,
@@ -25,22 +19,25 @@ const codeStyles = {
   borderRadius: 4,
 }
 
+const sectionStyles = {
+borderBottom: "1px solid var(--secondary)",
+}
+
 const IndexPage = () => {
   return (
     <Layout>
     <main style={pageStyles}>
-      <h1 style={headingStyles}>
+      <h1>
         Yin Yin Wu-Hanke
         <br />
-        <span style={headingAccentStyles}>— Webentwicklerin 🎉🎉🎉</span>
+       — Webentwicklerin
         </h1>
-        
-        <div id="skills">
+        <section id="skills" style={sectionStyles}>
           <h2>Skills</h2>
-          <p style={paragraphStyles}>
-            Edit <code style={codeStyles}>src/pages/index.js</code> to see this page update in real-time. 😎
-          </p>
-        </div>
+            <p style={paragraphStyles}>
+              Edit <code style={codeStyles}>src/pages/index.js</code> to see this page update in real-time. 😎
+            </p>
+        </section>
         
         <div id="cv">
           <h2>CV</h2>
