@@ -11,14 +11,14 @@ const GlobalStyles = createGlobalStyle`
         --gradient-2: #e6c17a;
     }
 
-    html {
-        scroll-snap-type: y mandatory;
-        scroll-padding-top: 60px;
-        scroll-padding-bottom: 20px;
-    }
+    // html {
+    //     scroll-snap-type: y mandatory;
+    //     scroll-padding-top: 60px;
+    //     scroll-padding-bottom: 20px;
+    // }
 
     body {
-      font-size: 2rem;
+      font-size: 1rem;
       background: var(--background-dark);
       color: var(--secondary);
     }
@@ -28,7 +28,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     h1 {
-        background-color: #f3ec78;
+        // background-color: #f3ec78;
     background-image: var(--primary);
     background-size: 100%;
     -webkit-background-clip: text;

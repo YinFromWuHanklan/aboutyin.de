@@ -2,6 +2,7 @@ import * as React from "react"
 import styled from "styled-components";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import "@fontsource/bebas-neue"
+import { FaHamburger } from "react-icons/fa";
 
 const MainNav = styled.nav`
     display: flex;
@@ -27,10 +28,19 @@ const NavLi = styled.li`
     font-family: "Bebas Neue";
 `
 
+const BurgerMenu = styled.div`
+  svg {
+    fill: var(--secondary);
+  }
+`
+
 const NavBar = () => {
     return (
       <MainNav>
-        <NavLogo>ABOUTYIN</NavLogo>
+        <div>
+          <NavLogo>ABOUTYIN</NavLogo>
+        </div>
+        <BurgerMenu><FaHamburger /></BurgerMenu>
         <NavUl>
             <NavLi><AnchorLink to="#aboutme" title="About me">About me</AnchorLink></NavLi>
             <NavLi><AnchorLink to="#skills" title="Skills">Skills</AnchorLink></NavLi>

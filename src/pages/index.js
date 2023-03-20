@@ -1,37 +1,43 @@
 import * as React from "react"
 import Layout from "../components/Layout"
-import styled from 'styled-components';
-import { FaHtml5, FaCss3Alt, FaBootstrap, FaSass, FaJs, FaReact, FaGithub, FaNpm } from "react-icons/fa";
+import styled, { keyframes } from 'styled-components';
+import { FaHtml5, FaCss3Alt, FaBootstrap, FaSass, FaJs, FaReact, FaGithub } from "react-icons/fa";
 import { GrGatsbyjs } from "react-icons/gr";
 import Footer from "../components/Footer";
 
 
+const fadeIn = keyframes`  
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+`
+
 const Title = styled.h1`
-font-size: 10px;
+  font-size: 10px;
+  animation: ${fadeIn} 1s ease-in 0s 1 normal none;
 `
 
 const SectionStyles = styled.section`
   height: 100vh;
   width: 100vw;
-  scroll-snap-align: start;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  // footer {
-  //   display: flex;
-  //   align-items: flex-end;
-  // }
 `
 
-const TechStak = styled.ul`
+const TechStack = styled.ul`
   color: var(--secondary);
-  display: flex;
+  display: flex;  
+  flex-wrap: wrap;
   list-style-type: none;
 `
 
-const TechStakSkill = styled.li`
+const TechStackSkill = styled.li`
   padding: 0 10px;
 
   svg {
@@ -49,7 +55,7 @@ const IndexPage = () => {
   return (
     <Layout>
     <main>
-      <SectionStyles>
+      <SectionStyles id="hero">
         <Title>
           Yin Yin Wu-Hanke<br /> — Webentwicklerin
         </Title>
@@ -69,67 +75,65 @@ const IndexPage = () => {
         
       <SectionStyles id="skills">
         <h2>Skills</h2>
-          <TechStak>
-            <TechStakSkill>
+          <TechStack>
+            <TechStackSkill>
               <FaHtml5 />
               <p>HTML</p>
-            </TechStakSkill>
+            </TechStackSkill>
 
-            <TechStakSkill>
+            <TechStackSkill>
               <FaCss3Alt />
               <p>CSS</p>
-            </TechStakSkill>
+            </TechStackSkill>
 
-            <TechStakSkill>
+            <TechStackSkill>
               <FaBootstrap />
               <p>Bootstrap</p>
-            </TechStakSkill>
+            </TechStackSkill>
 
-            <TechStakSkill>
+            <TechStackSkill>
               <FaSass />
               <p>Sass</p>
-            </TechStakSkill>
+            </TechStackSkill>
+          </TechStack>
 
-            <TechStakSkill>
+          <TechStack>
+            <TechStackSkill>
               <FaJs />
               <p>JavaScript</p>
-            </TechStakSkill>
+            </TechStackSkill>
 
-            <TechStakSkill>
+            <TechStackSkill>
               <FaGithub />
               <p>Github</p>
-            </TechStakSkill>
+            </TechStackSkill>
 
-            <TechStakSkill>
+            <TechStackSkill>
               <GrGatsbyjs />
               <p>Gatsby</p>
-            </TechStakSkill>
+            </TechStackSkill>
 
-            <TechStakSkill>
+            <TechStackSkill>
               <FaReact />
               <p>React</p>
-            </TechStakSkill>
-
-            <TechStakSkill>
-              <FaNpm />
-              <p>npm</p>
-            </TechStakSkill>
-            
-          </TechStak>
+            </TechStackSkill>            
+          </TechStack>
       </SectionStyles>
         
       <SectionStyles id="projekte">
         <h2>Projekte</h2>
-        <p>
-          Edit <code>src/pages/index.js</code> to see this page update in real-time. 😎
-        </p>
+        <div>Room32</div>
+        <div>linner wirtschaftsprüfung</div>
+        <div>wpseidemann</div>
+        <div>kirschstern (Shopify)</div>
+        <div>kick und boxmeisterei</div>
       </SectionStyles>
         
       <SectionStyles id="kontakt">
         <h2>Kontakt</h2>
         <p>
           Edit <code>src/pages/index.js</code> to see this page update in real-time. 😎
-        </p>
+          </p>
         <Footer />
       </SectionStyles>
     </main>
