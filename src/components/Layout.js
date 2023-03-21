@@ -1,6 +1,6 @@
 import * as React from "react"
 import 'normalize.css';
-import Nav2 from "./Nav2";
+import Nav from "./Nav";
 import GlobalStyles from '../styles/GlobalStyles';
 import "@fontsource/montserrat"
 
@@ -8,7 +8,7 @@ import "@fontsource/montserrat"
 export default function Layout({ children }) {
     return <div>
         <GlobalStyles />
-        <Nav2 />
+        <Nav />
         {children}
     </div>
 }

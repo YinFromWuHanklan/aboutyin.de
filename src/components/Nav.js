@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, { useState } from "react"
 import styled from "styled-components";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import "@fontsource/bebas-neue"
@@ -21,6 +21,10 @@ const NavUl = styled.ul`
     list-style-type: none;
     display: flex;
     justify-content: right;
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
 `
 
 const NavLi = styled.li`
@@ -28,20 +32,31 @@ const NavLi = styled.li`
     font-family: "Bebas Neue";
 `
 
-const BurgerMenu = styled.div`
+const BurgerMenu = styled.button`
   svg {
     fill: var(--secondary);
+  }
+
+  display: none;
+
+  @media (max-width: 600px) {
+    display: block;
   }
 `
 
 const NavBar = () => {
+  const [showNavbar, setShowNavbar] = useState(false)
+
+  const handleShowNavbar = () => {
+    setShowNavbar(!showNavbar)
+  }
     return (
       <MainNav>
         <div>
           <NavLogo>ABOUTYIN</NavLogo>
         </div>
-        <BurgerMenu><FaHamburger /></BurgerMenu>
-        <NavUl>
+        <BurgerMenu onClick={handleShowNavbar}><FaHamburger /></BurgerMenu>
+        <NavUl className={showNavbar}>
             <NavLi><AnchorLink to="#aboutme" title="About me">About me</AnchorLink></NavLi>
             <NavLi><AnchorLink to="#skills" title="Skills">Skills</AnchorLink></NavLi>
             <NavLi><AnchorLink to="#projekte" title="Projekte">Projekte</AnchorLink></NavLi>
