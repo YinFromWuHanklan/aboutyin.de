@@ -3,6 +3,7 @@ import 'normalize.css';
 import Nav from "./Nav";
 import GlobalStyles from '../styles/GlobalStyles';
 import "@fontsource/montserrat"
+import Footer from "./Footer";
 
 
 export default function Layout({ children }) {
@@ -10,5 +11,6 @@ export default function Layout({ children }) {
         <GlobalStyles />
         <Nav />
         {children}
+        <Footer />
     </div>
 }

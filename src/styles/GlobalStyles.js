@@ -11,11 +11,9 @@ const GlobalStyles = createGlobalStyle`
         --gradient-2: #e6c17a;
     }
 
-    // html {
-    //     scroll-snap-type: y mandatory;
-    //     scroll-padding-top: 60px;
-    //     scroll-padding-bottom: 20px;
-    // }
+    html {
+        // overflow-x: hidden;
+    }
 
     body {
       font-size: 1rem;
@@ -23,12 +21,26 @@ const GlobalStyles = createGlobalStyle`
       color: var(--secondary);
     }
 
+    nav {
+        .navbar-brand {
+            font-family: "Bebas Neue";
+        }
+
+        .navbar-toggler-icon {
+            color: var(--secondary);
+        }
+
+        .nav-item {
+            font-family: "Montserrat";
+        }
+    }
+
     main {
         padding: 1.25em; // 20px
     }
 
-    h1 {
-        // background-color: #f3ec78;
+    h1,
+    h2 {
     background-image: var(--primary);
     background-size: 100%;
     -webkit-background-clip: text;
@@ -39,12 +51,19 @@ const GlobalStyles = createGlobalStyle`
     font-family: "Bebas Neue";
     }
 
-    h2 {
-        font-size: 12px;
-        font-family: "Bebas Neue";
+    h1 {
+        font-size: 3em;
     }
 
-    h2,
+    h2 {
+        font-size: 3em;
+        margin: 3em 0 1em;
+
+        @media (max-width: 412px) {
+            font-size: 2.5em;
+        }
+    }
+
     h3,
     p {
         color: var(--secondary);

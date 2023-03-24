@@ -3,7 +3,6 @@ import Layout from "../components/Layout"
 import styled, { keyframes } from 'styled-components';
 import { FaHtml5, FaCss3Alt, FaBootstrap, FaSass, FaJs, FaReact, FaGithub } from "react-icons/fa";
 import { GrGatsbyjs } from "react-icons/gr";
-import Footer from "../components/Footer";
 
 
 const fadeIn = keyframes`  
@@ -17,13 +16,13 @@ const fadeIn = keyframes`
 `
 
 const Title = styled.h1`
-  font-size: 10px;
   animation: ${fadeIn} 1s ease-in 0s 1 normal none;
+  text-align: center;
 `
 
 const SectionStyles = styled.section`
   height: 100vh;
-  width: 100vw;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,16 +37,17 @@ const TechStack = styled.ul`
 `
 
 const TechStackSkill = styled.li`
-  padding: 0 10px;
+  padding: 1em 2em;
+  text-align: center;
 
   svg {
-  width: 2em;
-  height: 2em;
+  width: 6em;
+  height: 6em;
   }
 
   p {
-    font-size: 10px;
-    justify-content: center;
+    font-size: 1em;
+    margin-top: 1em;
   }
 `
 
@@ -57,7 +57,8 @@ const IndexPage = () => {
     <main>
       <SectionStyles id="hero">
         <Title>
-          Yin Yin Wu-Hanke<br /> — Webentwicklerin
+          Yin Yin Wu-Hanke<br />
+          Webentwicklerin
         </Title>
       </SectionStyles>
         
@@ -104,8 +105,8 @@ const IndexPage = () => {
             </TechStackSkill>
 
             <TechStackSkill>
-              <FaGithub />
-              <p>Github</p>
+              <FaReact />
+              <p>React</p>
             </TechStackSkill>
 
             <TechStackSkill>
@@ -114,8 +115,8 @@ const IndexPage = () => {
             </TechStackSkill>
 
             <TechStackSkill>
-              <FaReact />
-              <p>React</p>
+              <FaGithub />
+              <p>Github</p>
             </TechStackSkill>            
           </TechStack>
       </SectionStyles>
@@ -134,7 +135,6 @@ const IndexPage = () => {
         <p>
           Edit <code>src/pages/index.js</code> to see this page update in real-time. 😎
           </p>
-        <Footer />
       </SectionStyles>
     </main>
     </Layout>
@@ -143,4 +143,4 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => <title>aboutyin Webentwicklerin</title>
