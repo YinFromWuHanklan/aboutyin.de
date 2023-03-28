@@ -121,6 +121,41 @@ const IndexPage = () => {
           </TechStack>
       </SectionStyles>
         
+        <SectionStyles id="lebenslauf">
+        {/* eventuell als horizontal scroll :D */}
+        <h2>Lebenslauf</h2>
+          <div className="cv-item">
+            <p>06/2017 &ndash; heute</p>
+            <h3>Ellusion GmbH</h3>
+            <p>Webentwicklung</p>
+            <p>Blablabla</p>
+          </div>
+          <div className="cv-item">
+            <p>06/2017 &ndash; heute</p>
+            <h3>Ellusion GmbH</h3>
+            <p>Webentwicklung</p>
+            <p>Blablabla</p>
+          </div>
+          <div className="cv-item">
+            <p>06/2017 &ndash; heute</p>
+            <h3>Ellusion GmbH</h3>
+            <p>Webentwicklung</p>
+            <p>Blablabla</p>
+          </div>
+          <div className="cv-item">
+            <p>06/2017 &ndash; heute</p>
+            <h3>Ellusion GmbH</h3>
+            <p>Webentwicklung</p>
+            <p>Blablabla</p>
+          </div>
+          <div className="cv-item">
+            <p>06/2017 &ndash; heute</p>
+            <h3>Ellusion GmbH</h3>
+            <p>Webentwicklung</p>
+            <p>Blablabla</p>
+          </div>
+      </SectionStyles>
+      
       <SectionStyles id="projekte">
         <h2>Projekte</h2>
         <div>Room32</div>

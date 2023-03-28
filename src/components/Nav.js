@@ -29,6 +29,9 @@ function NavBar() {
               <NavLink href="#skills">Skills</NavLink>
             </NavItem>
             <NavItem>
+              <NavLink href="#lebenslauf">Lebenslauf</NavLink>
+            </NavItem>
+            <NavItem>
               <NavLink href="#projekte">Projekte</NavLink>
             </NavItem>
             <NavItem>
