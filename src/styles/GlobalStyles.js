@@ -7,12 +7,21 @@ const GlobalStyles = createGlobalStyle`
         --primary: linear-gradient(to right, #d3cae2, #e6c17a);
         --secondary: #f6ede3;
         --background-dark: #404041;
+        --background-navbar: #4b4b4ced;
         --gradient-1: #d3cae2;
         --gradient-2: #e6c17a;
     }
 
+    *,
+    *::before, 
+    *::after {
+        margin: 0; 
+        padding: 0;
+        box-sizing: inherit;
+    }
+
     html {
-        // overflow-x: hidden;
+        box-sizing: border-box; // navbar
     }
 
     body {
