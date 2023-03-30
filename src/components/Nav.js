@@ -57,7 +57,7 @@ const Navbar = {
 
     align-self: flex-start;
 
-    padding: 1rem 3rem;
+    padding: 1em;
 
     display: flex;
     justify-content: space-between;
@@ -114,6 +114,7 @@ const Navbar = {
 
     @media only screen and (max-width: 40em) {
       padding: 1rem 0;
+      font-size: 2em;
     }
   `
 };

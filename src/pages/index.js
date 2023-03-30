@@ -3,6 +3,8 @@ import Layout from "../components/Layout"
 import styled, { keyframes } from 'styled-components';
 import { FaHtml5, FaCss3Alt, FaBootstrap, FaSass, FaJs, FaReact, FaGithub } from "react-icons/fa";
 import { GrGatsbyjs } from "react-icons/gr";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 
 const fadeIn = keyframes`  
@@ -124,6 +126,7 @@ const IndexPage = () => {
         <SectionStyles id="lebenslauf">
         {/* eventuell als horizontal scroll :D */}
         <h2>Lebenslauf</h2>
+        <Carousel>
           <div className="cv-item">
             <p>06/2017 &ndash; heute</p>
             <h3>Ellusion GmbH</h3>
@@ -136,24 +139,7 @@ const IndexPage = () => {
             <p>Webentwicklung</p>
             <p>Blablabla</p>
           </div>
-          <div className="cv-item">
-            <p>06/2017 &ndash; heute</p>
-            <h3>Ellusion GmbH</h3>
-            <p>Webentwicklung</p>
-            <p>Blablabla</p>
-          </div>
-          <div className="cv-item">
-            <p>06/2017 &ndash; heute</p>
-            <h3>Ellusion GmbH</h3>
-            <p>Webentwicklung</p>
-            <p>Blablabla</p>
-          </div>
-          <div className="cv-item">
-            <p>06/2017 &ndash; heute</p>
-            <h3>Ellusion GmbH</h3>
-            <p>Webentwicklung</p>
-            <p>Blablabla</p>
-          </div>
+        </Carousel>
       </SectionStyles>
       
       <SectionStyles id="projekte">
