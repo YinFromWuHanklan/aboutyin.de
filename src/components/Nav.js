@@ -43,7 +43,7 @@ function App() {
 }
 
 const Styles = {
-  Wrapper: styled.main`
+  Wrapper: styled.div`
     display: flex;
     background-color: #eeeeee;
     // height: 100vh;

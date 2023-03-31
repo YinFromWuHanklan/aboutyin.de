@@ -257,7 +257,7 @@ const IndexPage = () => {
       <SectionStyles id="kontakt">
         <h2>Kontakt</h2>
         <p>
-          Edit <code>src/pages/index.js</code> to see this page update in real-time. 😎
+          Call me 😎
           </p>
       </SectionStyles>
     </main>
