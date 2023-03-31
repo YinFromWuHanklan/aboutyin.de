@@ -74,8 +74,11 @@ const Navbar = {
     }
   `,
   Logo: styled.h1`
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem;
     margin: 0;
+    @media (max-width: 40em) {
+      font-size: 2em;
+    }
   `,
   Items: styled.ul`
     display: flex;

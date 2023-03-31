@@ -49,7 +49,8 @@ const GlobalStyles = createGlobalStyle`
     }
 
     h1,
-    h2 {
+    h2,
+    h3 {
     background-image: var(--primary);
     background-size: 100%;
     -webkit-background-clip: text;
@@ -73,12 +74,12 @@ const GlobalStyles = createGlobalStyle`
         }
     }
 
-    h3,
-    p {
-        color: var(--secondary);
+    h3 {
+        font-size: 1.5em;
     }
 
     p {
+        color: var(--secondary);
         font-family: "Montserrat";
         font-size: 1rem;
     }
@@ -92,6 +93,27 @@ const GlobalStyles = createGlobalStyle`
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
     }
+
+
+/* Carousel styles */
+.carousel-container {
+    background: var(--background-dark);
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.carousel-item {
+    height: 20rem;
+    min-width: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+
 `;
 
 export default GlobalStyles;
