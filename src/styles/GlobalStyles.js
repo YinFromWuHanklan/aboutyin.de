@@ -28,6 +28,7 @@ const GlobalStyles = createGlobalStyle`
       font-size: 1rem;
       background: var(--background-dark);
       color: var(--secondary);
+      font-family: "Montserrat";
     }
 
     nav {
@@ -37,10 +38,6 @@ const GlobalStyles = createGlobalStyle`
 
         .navbar-toggler-icon {
             color: var(--secondary);
-        }
-
-        .nav-item {
-            font-family: "Montserrat";
         }
     }
 
@@ -80,8 +77,8 @@ const GlobalStyles = createGlobalStyle`
 
     p {
         color: var(--secondary);
-        font-family: "Montserrat";
-        font-size: 1rem;
+        font-size: 1em;
+        line-height: 1.5em;
     }
 
     a {

@@ -8,10 +8,6 @@ const FooterStyles = styled.footer`
     display: flex;
     justify-content: center;
     padding: 2em;
-    
-    p {
-        font-family: "Montserrat";
-    }
 
     .footer-desktop {
         @media (max-width: 40em) {
