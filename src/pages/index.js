@@ -1,7 +1,7 @@
 import * as React from "react"
 import Layout from "../components/Layout"
 import styled, { keyframes } from 'styled-components';
-import { FaHtml5, FaCss3Alt, FaBootstrap, FaSass, FaJs, FaReact, FaGithub } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaBootstrap, FaSass, FaJs, FaReact, FaGithub, FaEnvelope, FaXing, FaLinkedinIn } from "react-icons/fa";
 import { GrGatsbyjs } from "react-icons/gr";
 
 const fadeIn = keyframes`  
@@ -42,18 +42,14 @@ const SectionStyles = styled.section`
     margin-bottom: 3em;
     display: flex;
     justify-content: center;
-    padding: 2em;
     padding-top: 0;
 
-    @media (max-width: 640px) {
-      padding: 0;
-    }
+    // @media (max-width: 640px) {
+    //   padding: 0;
+    // }
     
     p {
       padding-top: 2em;
-      @media (min-width: 640px) {
-      width: 70%;
-      }
     }
   }
 
@@ -132,6 +128,17 @@ const TechStackSkill = styled.li`
     margin-top: 1em;
   }
 `
+
+const ContactList = styled.ul`
+  list-style: none;
+`
+
+const ContactItem = styled.li`
+  margin: 2em;
+  padding: 1em;
+  border: 1px solid var(--secondary);
+`
+
 
 const IndexPage = () => {
   return (
@@ -267,21 +274,15 @@ const IndexPage = () => {
           </tbody>
         </table>
       </SectionStyles>
-      
-      <SectionStyles id="projekte">
-        <h2>Projekte</h2>
-        <div>Room32</div>
-        <div>linner wirtschaftsprüfung</div>
-        <div>wpseidemann</div>
-        <div>kirschstern (Shopify)</div>
-        <div>kick und boxmeisterei</div>
-      </SectionStyles>
         
       <SectionStyles id="kontakt">
         <h2>Kontakt</h2>
-        <p>
-          Call me 😎
-          </p>
+        <ContactList>
+          <ContactItem>Email: <a href="mailto:y.wuhanke@gmail.com" title="y.wuhanke@gmail.com"><FaEnvelope /></a></ContactItem>
+          <ContactItem>Xing: <a href="https://www.xing.com/profile/YinYin_WuHanke/cv" title="Xing" target="_blank" rel="noreferrer"><FaXing /></a></ContactItem>
+          <ContactItem>LinkedIn: <a href="https://www.linkedin.com/in/yin-yin-wu-hanke-10630273/" title="LinkedIn" target="_blank" rel="noreferrer"><FaLinkedinIn /></a></ContactItem>
+          <ContactItem>Github: <a href="https://github.com/YinFromWuHanklan" title="Github" target="_blank" rel="noreferrer"><FaGithub /></a></ContactItem>
+        </ContactList>
       </SectionStyles>
     </main>
     </Layout>

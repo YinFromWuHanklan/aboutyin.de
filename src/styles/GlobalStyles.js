@@ -42,7 +42,13 @@ const GlobalStyles = createGlobalStyle`
     }
 
     main {
-        padding: 1.25em; // 20px
+        @media (min-width: 640px) {
+            width: 70%;
+            margin: auto;
+        }
+        @media (max-width: 640px) {
+            padding: 1.25em;
+        }
     }
 
     h1,

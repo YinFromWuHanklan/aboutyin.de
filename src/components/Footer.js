@@ -16,6 +16,7 @@ const FooterStyles = styled.footer`
     }
 
     .footer-mobile {
+        text-align: center;
         @media (min-width: 641px) {
             display: none;
         }
@@ -30,8 +31,10 @@ const Footer = () => {
         </div>
         <div className="footer-mobile">
             <p>&copy; {new Date().getFullYear()} built with &#x2661; from munich</p>
-            <Link to="/">Impressum</Link>
-            <Link to="/">Datenschutz</Link>
+            <p>
+                <Link to="/">Impressum </Link>|
+                <Link to="/"> Datenschutz</Link>
+            </p>
         </div>
         </FooterStyles>
     )

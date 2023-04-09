@@ -34,7 +34,6 @@ function App() {
           <Navbar.Item><AnchorLink to="#aboutme">Über mich</AnchorLink></Navbar.Item>
           <Navbar.Item><AnchorLink to="#skills">Skills</AnchorLink></Navbar.Item>
           <Navbar.Item><AnchorLink to="#lebenslauf">Lebenslauf</AnchorLink></Navbar.Item>
-          <Navbar.Item><AnchorLink to="#projekte">Projekte</AnchorLink></Navbar.Item>
           <Navbar.Item><AnchorLink to="#kontakt">Kontakt</AnchorLink></Navbar.Item>
         </Navbar.Items>
       </Navbar.Wrapper>
