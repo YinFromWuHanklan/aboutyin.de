@@ -27,8 +27,7 @@ const SectionStyles = styled.section`
   align-items: center;
 
   &#hero,
-  &#skills,
-  &#kontakt {
+  &#skills {
     @media (max-width: 640px) {
     height: 100vh;
     }
