@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
+import { Link } from "gatsby";
 
 function App() {
   const [openDrawer, toggleDrawer] = useState(false);
@@ -24,17 +25,17 @@ function App() {
     <Styles.Wrapper>
 
       <Navbar.Wrapper>
-        <Navbar.Logo>aboutyin</Navbar.Logo>
+        <Navbar.Logo><Link to="/">aboutyin</Link></Navbar.Logo>
 
         <HamburgerButton.Wrapper onClick={() => toggleDrawer(true)}>
           <HamburgerButton.Lines />
         </HamburgerButton.Wrapper>
 
         <Navbar.Items ref={drawerRef} openDrawer={openDrawer}>
-          <Navbar.Item><AnchorLink to="#aboutme">Über mich</AnchorLink></Navbar.Item>
-          <Navbar.Item><AnchorLink to="#skills">Skills</AnchorLink></Navbar.Item>
-          <Navbar.Item><AnchorLink to="#lebenslauf">Lebenslauf</AnchorLink></Navbar.Item>
-          <Navbar.Item><AnchorLink to="#kontakt">Kontakt</AnchorLink></Navbar.Item>
+          <Navbar.Item><AnchorLink to="/#aboutme">Über mich</AnchorLink></Navbar.Item>
+          <Navbar.Item><AnchorLink to="/#skills">Skills</AnchorLink></Navbar.Item>
+          <Navbar.Item><AnchorLink to="/#lebenslauf">Lebenslauf</AnchorLink></Navbar.Item>
+          <Navbar.Item><AnchorLink to="/#kontakt">Kontakt</AnchorLink></Navbar.Item>
         </Navbar.Items>
       </Navbar.Wrapper>
     </Styles.Wrapper>
