@@ -61,7 +61,7 @@ const GlobalStyles = createGlobalStyle`
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
 
-    font-family: "Bebas Neue";
+    font-family: "Bebas Neue", sans-serif;
     }
 
     h1 {

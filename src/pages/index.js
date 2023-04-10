@@ -131,12 +131,23 @@ const TechStackSkill = styled.li`
 
 const ContactList = styled.ul`
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 `
 
 const ContactItem = styled.li`
   margin: 2em;
-  padding: 1em;
+  padding: 1.5em 2em;
   border: 1px solid var(--secondary);
+  display: flex;
+  flex: 30%;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    color: var(--secondary);
+    font-size: 3em;
+  }
 `
 
 
@@ -236,7 +247,7 @@ const IndexPage = () => {
               <td className="cv-content">
                 <h3>imPOSant Marketing GmbH (selbstständig)</h3>
                 <p className="cv-position">Verkaufsberaterin</p>
-                <p>Verkaufsberatung exklusiv für WMF am Standort Kaufhof München, Betreuung chinesischer Kunden</p>
+                <p>Verkaufsberatung exklusiv für die Marke WMF am Standort Galeria Kaufhof München, Betreuung chinesischer Kunden</p>
               </td>
             </tr>
             <tr>
@@ -252,7 +263,7 @@ const IndexPage = () => {
               <td className="cv-content">
                 <h3>Body Up Studios</h3>
                 <p className="cv-position">Fitnesstrainerin</p>
-                <p>Erstellen und Einweisen in individuell angepasste Trainingspläne auf der Fläche, Leitung von kleinen Gruppenkursen</p>
+                <p>Anamnese, Erstellen und Einweisen in individuell angepasste Trainingspläne auf der Fläche, fachliche Betreuung der Mitglieder während dem Training</p>
               </td>
             </tr>
             <tr>
@@ -260,7 +271,7 @@ const IndexPage = () => {
               <td className="cv-content">
                 <h3>the sportsman media group</h3>
                 <p className="cv-position">Praktikum</p>
-                <p>Praktikum in der Sportvermarktung, Recherchearbeiten</p>
+                <p>Praktikum in der Sportrechtevermarktung, Recherchearbeiten</p>
               </td>
             </tr>
             <tr>
@@ -278,10 +289,10 @@ const IndexPage = () => {
       <SectionStyles id="kontakt">
         <h2>Kontakt</h2>
         <ContactList>
-          <ContactItem>Email: <a href="mailto:y.wuhanke@gmail.com" title="y.wuhanke@gmail.com"><FaEnvelope /></a></ContactItem>
-          <ContactItem>Xing: <a href="https://www.xing.com/profile/YinYin_WuHanke/cv" title="Xing" target="_blank" rel="noreferrer"><FaXing /></a></ContactItem>
-          <ContactItem>LinkedIn: <a href="https://www.linkedin.com/in/yin-yin-wu-hanke-10630273/" title="LinkedIn" target="_blank" rel="noreferrer"><FaLinkedinIn /></a></ContactItem>
-          <ContactItem>Github: <a href="https://github.com/YinFromWuHanklan" title="Github" target="_blank" rel="noreferrer"><FaGithub /></a></ContactItem>
+          <ContactItem><a href="mailto:y.wuhanke@gmail.com" title="y.wuhanke@gmail.com"><FaEnvelope /><br />Email</a></ContactItem>
+          <ContactItem><a href="https://www.xing.com/profile/YinYin_WuHanke/cv" title="Xing" target="_blank" rel="noopener noreferrer"><FaXing /><br />Xing</a></ContactItem>
+          <ContactItem><a href="https://www.linkedin.com/in/yin-yin-wu-hanke-10630273/" title="LinkedIn" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /><br />LinkedIn</a></ContactItem>
+          <ContactItem><a href="https://github.com/YinFromWuHanklan" title="Github" target="_blank" rel="noopener noreferrer"><FaGithub /><br />Github</a></ContactItem>
         </ContactList>
       </SectionStyles>
     </main>

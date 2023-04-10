@@ -27,13 +27,13 @@ const Footer = () => {
     return (
         <FooterStyles>
         <div className="footer-desktop">
-            <p>&copy; {new Date().getFullYear()} built with &#x2661; from munich | <Link to="/">Impressum</Link> | <Link to="/">Datenschutz</Link></p>
+            <p>&copy; {new Date().getFullYear()} built with &#x2661; from munich | <Link to="/impressum">Impressum</Link> | <Link to="/datenschutz">Datenschutz</Link></p>
         </div>
         <div className="footer-mobile">
             <p>&copy; {new Date().getFullYear()} built with &#x2661; from munich</p>
             <p>
-                <Link to="/">Impressum </Link>|
-                <Link to="/"> Datenschutz</Link>
+                <Link to="/impressum">Impressum </Link>|
+                <Link to="/datenschutz"> Datenschutz</Link>
             </p>
         </div>
         </FooterStyles>
