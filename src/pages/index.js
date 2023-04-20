@@ -1,8 +1,7 @@
 import * as React from "react"
 import Layout from "../components/Layout"
 import styled, { keyframes } from 'styled-components';
-import { FaHtml5, FaCss3Alt, FaBootstrap, FaSass, FaJs, FaReact, FaGitAlt, FaGithub, FaEnvelope, FaXing, FaLinkedinIn } from "react-icons/fa";
-import { GrGatsbyjs } from "react-icons/gr";
+import { FaHtml5, FaCss3Alt, FaBootstrap, FaSass, FaGitAlt, FaGithub, FaEnvelope, FaXing, FaLinkedinIn } from "react-icons/fa";
 
 const fadeIn = keyframes`  
     0% {
@@ -193,28 +192,11 @@ const IndexPage = () => {
               <FaSass />
               <p>Sass</p>
             </TechStackSkill>
-          </TechStack>
-
-          <TechStack>
-            <TechStackSkill>
-              <FaJs />
-              <p>JavaScript</p>
-            </TechStackSkill>
-
-            <TechStackSkill>
-              <FaReact />
-              <p>React</p>
-            </TechStackSkill>
-
-            <TechStackSkill>
-              <GrGatsbyjs />
-              <p>Gatsby</p>
-            </TechStackSkill>
 
             <TechStackSkill>
               <FaGitAlt />
               <p>Git</p>
-            </TechStackSkill>            
+            </TechStackSkill>     
           </TechStack>
       </SectionStyles>
         
