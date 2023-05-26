@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { Link } from "gatsby";
 
 function App() {
@@ -32,10 +31,10 @@ function App() {
         </HamburgerButton.Wrapper>
 
         <Navbar.Items ref={drawerRef} openDrawer={openDrawer}>
-          <Navbar.Item><AnchorLink to="/#aboutme">Über mich</AnchorLink></Navbar.Item>
-          <Navbar.Item><AnchorLink to="/#skills">Skills</AnchorLink></Navbar.Item>
-          <Navbar.Item><AnchorLink to="/#lebenslauf">Lebenslauf</AnchorLink></Navbar.Item>
-          <Navbar.Item><AnchorLink to="/#kontakt">Kontakt</AnchorLink></Navbar.Item>
+          <Navbar.Item><Link to="/skills">Fähigkeiten</Link></Navbar.Item>
+          <Navbar.Item><Link to="/project">Projekte</Link></Navbar.Item>
+          <Navbar.Item><Link to="/miscellaneous">Sonstiges</Link></Navbar.Item>
+          <Navbar.Item><Link to="/contact">Kontakt</Link></Navbar.Item>
         </Navbar.Items>
       </Navbar.Wrapper>
     </Styles.Wrapper>
