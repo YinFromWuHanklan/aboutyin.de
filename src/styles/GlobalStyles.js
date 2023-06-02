@@ -1,13 +1,14 @@
 import { createGlobalStyle } from 'styled-components';
-import "@fontsource/bebas-neue"
-import "@fontsource/montserrat"
+import "@fontsource/bebas-neue";
+import "@fontsource/montserrat";
+import "@fontsource-variable/red-hat-mono";
 
 const GlobalStyles = createGlobalStyle`
     :root {
         --primary: linear-gradient(to right, #d3cae2, #e6c17a);
         --secondary: #f6ede3;
-        --background-dark: #404041;
-        --background-navbar: #4b4b4ced;
+        --background-dark: #1e0d29;
+        --background-navbar: #301d3d;
         --gradient-1: #d3cae2;
         --gradient-2: #e6c17a;
     }
@@ -28,7 +29,11 @@ const GlobalStyles = createGlobalStyle`
       font-size: 1rem;
       background: var(--background-dark);
       color: var(--secondary);
-      font-family: "Montserrat";
+      font-family: "Red Hat Mono Variable", monospace;
+
+      @media (max-width: 640px) {
+        margin-top: 5.313rem;
+      }
     }
 
     nav {
