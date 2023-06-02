@@ -1,6 +1,6 @@
 import * as React from "react"
 import Layout from "../components/Layout"
-import { FaHtml5, FaCss3Alt, FaBootstrap, FaSass, FaGitAlt, FaGithub, FaEnvelope, FaXing, FaLinkedinIn } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaBootstrap, FaSass, FaGitAlt, FaJs, FaAngular } from "react-icons/fa";
 import styled from 'styled-components';
 
 
@@ -55,6 +55,16 @@ const SkillsPage = () => {
                     <TechStackSkill>
                     <FaSass />
                     <p>Sass</p>
+                    </TechStackSkill>
+
+                    <TechStackSkill>
+                    <FaJs />
+                    <p>JavaScript</p>
+                    </TechStackSkill>     
+
+                    <TechStackSkill>
+                    <FaAngular />
+                    <p>Angular</p>
                     </TechStackSkill>
 
                     <TechStackSkill>

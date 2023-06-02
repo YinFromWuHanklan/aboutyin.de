@@ -33,7 +33,7 @@ function App() {
         <Navbar.Items ref={drawerRef} openDrawer={openDrawer}>
           <Navbar.Item><Link to="/skills">Fähigkeiten</Link></Navbar.Item>
           <Navbar.Item><Link to="/projects">Projekte</Link></Navbar.Item>
-          <Navbar.Item><Link to="/miscellaneous">Sonstiges</Link></Navbar.Item>
+          {/* <Navbar.Item><Link to="/miscellaneous">Sonstiges</Link></Navbar.Item> */}
           <Navbar.Item><Link to="/contact">Kontakt</Link></Navbar.Item>
         </Navbar.Items>
       </Navbar.Wrapper>
@@ -93,7 +93,7 @@ const Navbar = {
 
       flex-direction: column;
 
-      background-color: #4b4b4c;
+      background-color: var(--background-navbar);
       padding: 1rem 2rem;
 
       transition: 0.2s ease-out;
