@@ -3,10 +3,6 @@ import Layout from "../components/Layout"
 import styled, { keyframes } from 'styled-components';
 import profileimg from "../images/aboutyin-profile.png"
 
-const main = {
-
-}
-
 const fadeIn = keyframes`  
     0% {
       opacity: 0;
@@ -16,8 +12,6 @@ const fadeIn = keyframes`
       opacity: 1;
     }
 `
-
-
 
 const Main = styled.main`
   @media (min-width: 640px) {
@@ -29,6 +23,7 @@ const Main = styled.main`
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    animation: ${fadeIn} 1s ease-in 0s 1 normal none;
 
     @media (max-width: 640px) {
       flex-direction: column;
@@ -39,7 +34,6 @@ const Main = styled.main`
     }
 
     h1 {
-      animation: ${fadeIn} 1s ease-in 0s 1 normal none;
       text-align: center;
       font-size: 3rem;
     }
@@ -50,14 +44,12 @@ const Main = styled.main`
   }
 `
 
-// const profileimg = require("../images/aboutyin-profile.png");
-
 const IndexPage = () => {
   return (
     <Layout>
     <Main>
         <div>
-          <img src={profileimg} alt="About Yin Profilbild" width={150} height={150}></img>
+          <img src={profileimg} alt="About Yin Profilbild" width={200} height={200}></img>
           <h1>
             Yin Yin Wu-Hanke<br />
             Webentwicklerin
