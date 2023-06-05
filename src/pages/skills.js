@@ -56,7 +56,9 @@ const SkillsPage = () => {
                     <FaSass />
                     <p>Sass</p>
                     </TechStackSkill>
+                    </TechStack>
 
+                    <TechStack>
                     <TechStackSkill>
                     <FaJs />
                     <p>JavaScript</p>
