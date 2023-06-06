@@ -1,8 +1,7 @@
 import * as React from "react"
 import Layout from "../components/Layout"
-import { FaHtml5, FaCss3Alt, FaBootstrap, FaSass, FaGitAlt, FaJs, FaAngular } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaBootstrap, FaSass, FaGitAlt, FaJs, FaAngular, FaReact } from "react-icons/fa";
 import styled from 'styled-components';
-
 
 const TechStack = styled.ul`
   color: var(--secondary);
@@ -29,6 +28,40 @@ const TechStackSkill = styled.li`
     font-size: 1em;
     margin-top: 1em;
   }
+
+  progress[value] {
+    margin-top: 1rem;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    &::-webkit-progress-bar {
+      background-color: var(--background-dark);
+      border: 1px solid var(--secondary);
+    }
+
+    &::-webkit-progress-value {
+      background-image: var(--primary);
+    }
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+
+    span {
+      width: 1rem;
+      height: 1rem;
+      margin: 0.5rem;
+
+      &.full {
+        background-color: pink;
+      }
+      &.empty {
+        background-color: black;
+      }
+    }
+  }
 `
 
 const SkillsPage = () => {
@@ -40,21 +73,25 @@ const SkillsPage = () => {
                     <TechStackSkill>
                     <FaHtml5 />
                     <p>HTML</p>
+                    <progress value="90" max="100"></progress>
                     </TechStackSkill>
 
                     <TechStackSkill>
                     <FaCss3Alt />
                     <p>CSS</p>
+                    <progress value="80" max="100"></progress>
                     </TechStackSkill>
 
                     <TechStackSkill>
                     <FaBootstrap />
                     <p>Bootstrap</p>
+                    <progress value="80" max="100"></progress>
                     </TechStackSkill>
 
                     <TechStackSkill>
                     <FaSass />
                     <p>Sass</p>
+                    <progress value="80" max="100"></progress>
                     </TechStackSkill>
                     </TechStack>
 
@@ -62,16 +99,25 @@ const SkillsPage = () => {
                     <TechStackSkill>
                     <FaJs />
                     <p>JavaScript</p>
+                    <progress value="30" max="100"></progress>
                     </TechStackSkill>     
 
                     <TechStackSkill>
                     <FaAngular />
                     <p>Angular</p>
+                    <progress value="10" max="100"></progress>
+                    </TechStackSkill>     
+
+                    <TechStackSkill>
+                    <FaReact />
+                    <p>React</p>
+                    <progress value="10" max="100"></progress>
                     </TechStackSkill>
 
                     <TechStackSkill>
                     <FaGitAlt />
                     <p>Git</p>
+                    <progress value="70" max="100"></progress>
                     </TechStackSkill>     
                 </TechStack>
             </main>
@@ -82,4 +128,4 @@ const SkillsPage = () => {
 
 export default SkillsPage
 
-export const Head = () => <title>aboutyin Webentwicklerin - Skills</title>
+export const Head = () => <h1>aboutyin Webentwicklerin - Skills</h1>

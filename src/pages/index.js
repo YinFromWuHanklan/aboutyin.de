@@ -1,7 +1,7 @@
 import * as React from "react"
 import Layout from "../components/Layout"
 import styled, { keyframes } from 'styled-components';
-import profileimg from "../images/aboutyin-profile.png"
+import profileimg from "../images/aboutyin-profile.png";
 
 const fadeIn = keyframes`  
     0% {
@@ -14,10 +14,6 @@ const fadeIn = keyframes`
 `
 
 const Main = styled.main`
-  @media (min-width: 640px) {
-    // height: 100vh;
-  }
-
   div {
     display: flex;
     flex-direction: row;
