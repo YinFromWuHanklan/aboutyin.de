@@ -1,6 +1,7 @@
 import * as React from "react"
 import Layout from "../components/Layout"
 import { FaHtml5, FaCss3Alt, FaBootstrap, FaSass, FaGitAlt, FaJs, FaAngular, FaReact } from "react-icons/fa";
+import { SiSvelte } from "react-icons/si";
 import styled from 'styled-components';
 
 const TechStack = styled.ul`
@@ -110,7 +111,13 @@ const SkillsPage = () => {
 
                     <TechStackSkill>
                     <FaReact />
-                    <p>React</p>
+                    <p>ReactJS</p>
+                    <progress value="10" max="100"></progress>
+                    </TechStackSkill>     
+
+                    <TechStackSkill>
+                    <SiSvelte />
+                    <p>Svelte</p>
                     <progress value="10" max="100"></progress>
                     </TechStackSkill>
 
