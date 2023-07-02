@@ -6,6 +6,8 @@ const Projects = styled.div `
     border: 1px solid var(--secondary);
     padding: 2rem;
     margin-bottom: 3rem;
+    box-shadow: 5px 5px;
+    border-radius: 5px;
     h2 {
         margin: 0;
     }

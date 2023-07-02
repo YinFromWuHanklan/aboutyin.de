@@ -19,6 +19,8 @@ const ContactItem = styled.li`
   flex: 30%;
   justify-content: center;
   align-items: center;
+  box-shadow: 5px 5px;
+  border-radius: 5px;
 
   svg {
     color: var(--secondary);
