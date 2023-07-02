@@ -31,11 +31,6 @@ const ProjectsPage = () => {
                     <a href="https://yinfromwuhanklan.github.io/immofi/" target="_blank" title="ImmoFi" rel="noreferrer">&rarr; Zu ImmoFi</a>
                 </Projects>
                 <Projects>
-                    <h2>Stofflager</h2>
-                    <p>Under construction: Webanwendung basierend auf Angular</p>
-                    <a href="https://github.com/YinFromWuHanklan/stofflager" target="_blank" title="Stofflager" rel="noreferrer">&rarr; Zum Stofflager (Github Repo)</a>
-                </Projects>
-                <Projects>
                     <h2>Webseite</h2>
                     <p>Webseite für Wirtschaftsprüfung Seidemann: Onepager basierend auf HTML, CSS/Bootstrap/SCSS</p>
                     <a href="https://wpseidemann.de/" target="_blank" title="WP Seidemann" rel="noreferrer">&rarr; Zur Webseite</a>
