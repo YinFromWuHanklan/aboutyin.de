@@ -31,9 +31,8 @@ function App() {
         </HamburgerButton.Wrapper>
 
         <Navbar.Items ref={drawerRef} openDrawer={openDrawer}>
-          <Navbar.Item><Link to="/skills">Fähigkeiten</Link></Navbar.Item>
           <Navbar.Item><Link to="/projects">Projekte</Link></Navbar.Item>
-          {/* <Navbar.Item><Link to="/miscellaneous">Sonstiges</Link></Navbar.Item> */}
+          <Navbar.Item><Link to="/about">Über mich</Link></Navbar.Item>
           <Navbar.Item><Link to="/contact">Kontakt</Link></Navbar.Item>
         </Navbar.Items>
       </Navbar.Wrapper>
