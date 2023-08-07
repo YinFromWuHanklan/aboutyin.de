@@ -12,8 +12,8 @@ const ContactList = styled.ul`
 `
 
 const ContactItem = styled.li`
-  margin: 2em;
-  padding: 1.5em 2em;
+  margin: 2rem;
+  padding: 1.5rem 2rem;
   border: 1px solid var(--secondary);
   display: flex;
   flex: 30%;
