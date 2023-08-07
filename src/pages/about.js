@@ -14,6 +14,7 @@ const Infolistitem = styled.li`
   border: 1px solid var(--secondary);
   box-shadow: 5px 5px;
   border-radius: 5px;
+  flex-grow: 2;
 
   h2 {
     margin: 0;
@@ -63,6 +64,14 @@ const About = () => {
                             <li>Englisch (Fließend)</li>
                             <li>Spanisch (Fließend)</li>
                             <li>Französisch (Grundkenntnisse)</li>
+                        </ul>
+                    </Infolistitem>
+                    <Infolistitem>
+                        <h2>Lieblingspodcasts</h2>
+                        <ul>
+                            <li><a href="https://open.spotify.com/show/4XPl3uEEL9hvqMkoZrzbx5?si=33805b8ab60f4e18" title="Link zu Spotifiy: Darknet Diaries" rel="noopener noreferrer">Darknet Diaries</a></li>
+                            <li><a href="https://open.spotify.com/show/5mUoxiityJLco71kEhTArI?si=1bfc4e0af8f34387" title="Link zu Spotifiy: Weird Crimes" rel="noopener noreferrer">Weird Crimes</a></li>
+                            <li><a href="https://open.spotify.com/show/4b3j3Hasm5V11w1w1IIok8?si=bcd3176c9730436e" title="Link zu Spotifiy: Macht & Millionen" rel="noopener noreferrer">Macht & Millionen</a></li>
                         </ul>
                     </Infolistitem>
                     <Infolistitem>
