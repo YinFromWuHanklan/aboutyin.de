@@ -27,6 +27,8 @@ const Main = styled.main`
 
     img {
       margin: 2rem;
+      border: 2px solid var(--secondary);
+      border-radius: 5px;
     }
 
     h1 {
